@@ -1,0 +1,64 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    
+    "http.proxy": "http://dev-proxy.oa.com:8080",
+
+    "vim.disableAnnoyingNeovimMessage": true,
+
+    "C_Cpp.intelliSenseEngine": "Default",
+
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+
+    //for vim
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","a"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "C_Cpp.SwitchHeaderSource"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>","c","c"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.addCommentLine"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>","c","u"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.removeCommentLine"
+                }
+            ]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys":{
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-k>": false
+    },
+    "vim.foldfix": true,
+    //for vim end
+
+    "markdownlint.config": {
+        "default": true,
+        "MD041": false,
+        "no-hard-tabs": true
+    },
+
+    "files.associations": {
+        "BUILD": "python"
+    },
+    "workbench.colorTheme": "Monokai Dimmed",
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+    "terminal.integrated.shell.windows": "C:\\Cygwin64\\Cygwin.bat"
+}
